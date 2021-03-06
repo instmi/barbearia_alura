@@ -8,6 +8,8 @@ header {
 }
 
 .caixa {
+    width: 940px;
+    margin: 0px auto;
     position: relative;
 }
 
@@ -65,6 +67,7 @@ nav a:hover {
 .titulo-principal {
     clear: left;
     margin: 0 0 1rem;
+    font-weight: bold;
     text-align: center;
     font-size: 2rem;
 }
@@ -118,10 +121,6 @@ nav a:hover {
     line-height: 1.5;
 }
 
-.itens:first-child {
-    font-weight: bold;
-}
-
 .itens::before {
     content: "★";
     margin-right: 5px;
@@ -151,4 +150,22 @@ footer {
     margin-top: 20px;
     font-size: 13px;
     color: #ffffff;
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        position: static;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .caixa, .sobre, .mapa-conteudo, .video, .conteudo-beneficios {
+        width: auto;
+    }
+
+    .lista-beneficios, .img_beneficios {
+        width: 100%;
+    }
 }
