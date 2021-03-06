@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 
     <title>Barbearia Alura</title>
@@ -27,12 +31,13 @@
         </div>
     </header>
 
+    <img class="banner" src="imagens/banner.jpg" alt="Foto de uma barbearia">
+
     <main>
-        <img id="banner" src="imagens/banner.jpg" alt="Foto de uma barbearia">
+        <section class="sobre caixa">
+            <h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
 
-        <div class="sobre">
-            <h2 class="titulo-centralziado">Sobre a Barbearia Alura</h2>
-
+            <img src="imagens/utensilios.jpg" class="utensilios" alt="Foto de utensilios usados para barbear">
 
             <p>
                 Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de
@@ -53,11 +58,19 @@
                 padrão
                 de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.
             </p>
-        </div>
+        </section>
+
+        <section class="mapa caixa">
+            <h3 class="titulo-principal">Nosso estabelecimento</h3>
+
+            <p>Nosso estabelecimento está localizado no coração da cidade</p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116982.69768112265!2d-46.58717716385338!3d-23.614756275501538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20Escola%20de%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1614980376364!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
 
 
-        <div class="beneficios">
-            <h3 class="titulo-centralziado">Benefícios</h3>
+        <section class="beneficios caixa">
+            <h3 class="titulo-principal">Benefícios</h3>
 
             <ul>
                 <li class="itens">Atendimento aos clientes</li>
@@ -67,7 +80,12 @@
             </ul>
 
             <img src="imagens/beneficios.jpg" alt="" class="img_beneficios">
-        </div>
+            
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+        </section>
     </main>
 
     <footer>
